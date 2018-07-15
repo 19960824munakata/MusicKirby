@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HiraginoMincho.ttc">
+            <string>HiraMinProN-W6</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ForPickerView" customModule="MusicKirby" customModuleProvider="target">
+            <connections>
+                <outlet property="imageView" destination="uNC-8f-1oa" id="st8-ab-iiu"/>
+                <outlet property="labelBackGround" destination="Bof-jd-U0a" id="HnL-5B-c8N"/>
+                <outlet property="musicLabel" destination="kkh-Tj-HwA" id="3Lq-az-wmi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uNC-8f-1oa">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="385"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="labelbackImage" translatesAutoresizingMaskIntoConstraints="NO" id="Bof-jd-U0a">
+                    <rect key="frame" x="-16" y="400" width="375" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="JXy-fm-Cfz"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkh-Tj-HwA">
+                    <rect key="frame" x="42" y="400" width="300" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="WNE-QW-8kE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HiraMinProN-W6" family="Hiragino Mincho ProN" pointSize="34"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kkh-Tj-HwA" secondAttribute="trailing" constant="33" id="EqD-FT-5DY"/>
+                <constraint firstItem="uNC-8f-1oa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="G8D-2j-q5N"/>
+                <constraint firstItem="uNC-8f-1oa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Hue-xR-6xr"/>
+                <constraint firstItem="uNC-8f-1oa" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="KWk-BE-vow"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Bof-jd-U0a" secondAttribute="trailing" constant="16" id="MIq-nK-wII"/>
+                <constraint firstItem="Bof-jd-U0a" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="-16" id="R74-J2-X6l"/>
+                <constraint firstItem="Bof-jd-U0a" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="S6F-LA-3Ab"/>
+                <constraint firstItem="Bof-jd-U0a" firstAttribute="top" secondItem="uNC-8f-1oa" secondAttribute="bottom" constant="15" id="hKk-D3-iXt"/>
+                <constraint firstItem="kkh-Tj-HwA" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="tCE-og-lbz"/>
+                <constraint firstItem="kkh-Tj-HwA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="42" id="zh8-j9-Waf"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="83.5" y="-81"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="labelbackImage" width="1051" height="328"/>
+    </resources>
+</document>
